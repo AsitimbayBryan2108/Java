@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="examen.vistas.SuscripcionSerieController">
+   <children>
+      <Label layoutX="230.0" layoutY="55.0" text="Suscripcion Serie" textFill="#d70101">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="97.0" text="Numero:" />
+      <Label layoutX="383.0" layoutY="97.0" text="Fecha:" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5f5f5ed" height="123.0" layoutX="32.0" layoutY="141.0" stroke="#d3cbcb" strokeType="INSIDE" width="524.0" />
+      <Label layoutX="48.0" layoutY="134.0" text="Datos del cliente" textFill="#0404eb" />
+      <Label layoutX="42.0" layoutY="168.0" text="Cliente:" />
+      <Label layoutX="42.0" layoutY="202.0" text="Cedula:" />
+      <Label layoutX="48.0" layoutY="238.0" text="Edad:" />
+      <Label layoutX="306.0" layoutY="202.0" text="Nombres:" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5f5f5ed" height="94.0" layoutX="32.0" layoutY="277.0" stroke="#d3cbcb" strokeType="INSIDE" width="524.0" />
+      <Label layoutX="48.0" layoutY="269.0" text="Datos de la serie" textFill="#0015d7" />
+      <Label layoutX="42.0" layoutY="303.0" text="Codigo Serie:" />
+      <Label layoutX="42.0" layoutY="339.0" text="Nombre:" />
+      <Label layoutX="243.0" layoutY="339.0" text="Temporada:" />
+      <Label layoutX="406.0" layoutY="339.0" text="Capitulos:" />
+      <Label layoutX="34.0" layoutY="414.0" text="Costo por Temporada: $" />
+      <Label layoutX="34.0" layoutY="459.0" text="Descuento Aplicado:" />
+      <Label layoutX="34.0" layoutY="500.0" prefHeight="17.0" prefWidth="129.0" text="Total a cancelar:           $" />
+      <Label layoutX="320.0" layoutY="451.0" text="Monto de Descuento: $" />
+      <TextField fx:id="txtNumero" disable="true" layoutX="89.0" layoutY="93.0" />
+      <TextField fx:id="txtFecha" disable="true" layoutX="429.0" layoutY="93.0" prefHeight="25.0" prefWidth="125.0" />
+      <TextField fx:id="txtCodigoCliente" layoutX="89.0" layoutY="164.0" />
+      <TextField fx:id="txtCedula" disable="true" layoutX="89.0" layoutY="198.0" />
+      <TextField fx:id="txtEdad" disable="true" layoutX="89.0" layoutY="234.0" />
+      <TextField fx:id="txtNombres" disable="true" layoutX="371.0" layoutY="198.0" />
+      <TextField fx:id="txtCodigoSerie" layoutX="113.0" layoutY="299.0" />
+      <TextField fx:id="txtNombreSerie" disable="true" layoutX="93.0" layoutY="335.0" />
+      <TextField fx:id="txtTemporada" disable="true" layoutX="306.0" layoutY="335.0" prefHeight="25.0" prefWidth="96.0" />
+      <TextField fx:id="txtCapitulos" disable="true" layoutX="461.0" layoutY="335.0" prefHeight="25.0" prefWidth="88.0" />
+      <Button fx:id="btnCliente" layoutX="242.0" layoutY="164.0" mnemonicParsing="false" onAction="#onCliente" text="Buscar" />
+      <Button fx:id="btnSerie" layoutX="268.0" layoutY="299.0" mnemonicParsing="false" onAction="#onSerie" text="Buscar" />
+      <Button fx:id="btnGrabar" layoutX="242.0" layoutY="570.0" mnemonicParsing="false" text="Grabar" />
+      <TextField fx:id="txtCostoTemporada" layoutX="171.0" layoutY="410.0" prefHeight="25.0" prefWidth="142.0" />
+      <TextField fx:id="txtDescuento" layoutX="171.0" layoutY="455.0" prefHeight="25.0" prefWidth="142.0" />
+      <TextField fx:id="txtTotal" layoutX="169.0" layoutY="496.0" prefHeight="25.0" prefWidth="142.0" />
+      <TextField fx:id="txtMonto" layoutX="457.0" layoutY="447.0" prefHeight="25.0" prefWidth="96.0" />
+   </children>
+</AnchorPane>
